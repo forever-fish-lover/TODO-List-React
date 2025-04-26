@@ -1,0 +1,174 @@
+/*body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  button {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .dialog-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+*/  
+/* 保留原始樣式並擴充 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2f3640;
+    margin-bottom: 20px;
+}
+
+.project-control {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#projectDropdown {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #40739e;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2f3640;
+}
+
+.add-task-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.add-task-form input,
+.add-task-form select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-left: 6px solid #7f8fa6;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+li span {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li .completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li div {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #353b48;
+}
+
+li button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e84118;
+}
+
+li button:hover {
+    background-color: #c23616;
+}
+
+.priority-high {
+    border-left-color: #e74c3c;
+    background-color: #ffe6e6;
+}
+
+.priority-medium {
+    border-left-color: #f1c40f;
+    background-color: #fffbe6;
+}
+
+.priority-low {
+    border-left-color: #2ecc71;
+    background-color: #e6fff2;
+}
+
